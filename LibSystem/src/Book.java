@@ -12,11 +12,18 @@ public class Book {
         map.put(6, new String("Book6"));
     }
 
-    public void addBook(Integer Key, String Value){
+    public void addBookMethod(Integer Key, String Value){
+        addBook(Key, Value);
+    }
+    private void addBook(Integer Key, String Value){
         map.put(Key, Value);
     }
 
-    public void removeBook(Integer Key){
+    public void removeBookMethod(Integer Key){
+        removeBook(Key);
+    }
+
+    private void removeBook(Integer Key){
         map.remove(Key);
     }
 

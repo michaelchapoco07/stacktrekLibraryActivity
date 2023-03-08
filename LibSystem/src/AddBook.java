@@ -7,7 +7,8 @@ public class AddBook implements Command {
 
     @Override
     public void execute() {
-        randomBook.addBook(1,"Added this");
-        randomBook.addBook(12,"Book 12 added");
+        randomBook.addBookMethod(12,"Book 12 added");
+        randomBook.addBookMethod(15, "Hogwarts Legacy");
+        randomBook.addBookMethod(1, "Moby Dick");
     }
 }

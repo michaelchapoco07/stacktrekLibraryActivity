@@ -7,6 +7,7 @@ public class RemoveBook implements Command{
 
     @Override
     public void execute() {
-        randomBook.removeBook(1);
+        randomBook.removeBookMethod(1);
+        randomBook.removeBookMethod(3);
     }
 }

@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) {
 
         Book randomBook = new Book();
-
         AddBook forAddBook = new AddBook(randomBook);
         RemoveBook forRemoveBook = new RemoveBook(randomBook);
         ViewBooks forViewBooks = new ViewBooks(randomBook);
