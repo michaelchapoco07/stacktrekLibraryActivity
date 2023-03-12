@@ -1,17 +1,20 @@
+import java.security.Key;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 public class Main {
     public static void main(String[] args) {
+        BookDatabase bookSet = BookDatabase.getInstance();
 
-        Book randomBook = new Book();
-        AddBook forAddBook = new AddBook(randomBook);
-        RemoveBook forRemoveBook = new RemoveBook(randomBook);
-        ViewBooks forViewBooks = new ViewBooks(randomBook);
 
-        Librarian librarian = new Librarian();
-        librarian.takeCommand(forAddBook);
-        librarian.takeCommand(forRemoveBook);
-        librarian.takeCommand(forViewBooks);
-
-        librarian.placeCommands();
-
+        bookSet.viewBook();
+        bookSet.addBook();
+        bookSet.removeBook();
     }
+
+
+
+
 }
